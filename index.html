@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Simple Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body style="font-family: 'Poppins', sans-serif; background: #f0f8ff; padding: 30px; margin: 0;">
+
+  <div style="max-width: 800px; margin: auto;">
+    <h1 style="text-align: center; color: #0022ff; margin-bottom: 40px;">📝 The Daily Scribble</h1>
+
+    <form id="blogForm" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+      <h2 style="margin-bottom: 20px; color: #333;">Create a New Post</h2>
+      <input type="text" id="title" placeholder="Blog Title" required
+             style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
+      <textarea id="content" placeholder="Write your blog here..." required
+                style="width: 100%; padding: 12px; height: 120px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;"></textarea>
+      <button type="submit"
+              style="padding: 12px 24px; background: linear-gradient(to right, #007bff, #00c6ff); color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+        ➕ Post
+      </button>
+    </form>
+
+    <div id="posts">
+      <!-- Posts will show here (JS will add them) -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
